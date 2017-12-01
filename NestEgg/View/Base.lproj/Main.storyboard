@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NestEgg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nam-7i-aZH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rix-ns-kIf">
+                                <rect key="frame" x="12" y="662" width="100" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Buy Food">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BuyFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJH-X2-y0U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slh-RM-hjH">
+                                <rect key="frame" x="12" y="610" width="82" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Buy Toy">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BuyToy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ay4-Cm-eX5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYA-ju-Jkg">
+                                <rect key="frame" x="349" y="611" width="44" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwc-9h-2Fv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3x-NJ-gkp">
+                                <rect key="frame" x="344" y="658" width="52" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Feed"/>
+                                <connections>
+                                    <action selector="FeedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qO-ag-h6N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness: XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfe-Tb-uF3">
+                                <rect key="frame" x="20" y="51" width="165" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fullness: XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zya-Br-oQI">
+                                <rect key="frame" x="20" y="100" width="140" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money Saved: $XXX.XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7x-Lc-WT0">
+                                <rect key="frame" x="20" y="148" width="244" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num Food: XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf0-OH-Ezn">
+                                <rect key="frame" x="243" y="51" width="150" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num Toys: XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tt8-27-qKa">
+                                <rect key="frame" x="243" y="100" width="144" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-TY-1xU">
+                                <rect key="frame" x="67" y="303" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cfe-Tb-uF3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="CB9-SM-qx2"/>
+                            <constraint firstItem="zya-Br-oQI" firstAttribute="top" secondItem="Cfe-Tb-uF3" secondAttribute="bottom" constant="22" id="G6k-pH-jCE"/>
+                            <constraint firstItem="h7x-Lc-WT0" firstAttribute="top" secondItem="zya-Br-oQI" secondAttribute="bottom" constant="21" id="LSk-CQ-8Ax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tt8-27-qKa" secondAttribute="trailing" constant="27" id="Mwt-0t-AXH"/>
+                            <constraint firstItem="Nam-7i-aZH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NO4-VT-QfS"/>
+                            <constraint firstItem="Nam-7i-aZH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QSq-OK-0pw"/>
+                            <constraint firstItem="Wf0-OH-Ezn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="iRm-Cg-Gcu"/>
+                            <constraint firstItem="Nam-7i-aZH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j30-d6-Dto"/>
+                            <constraint firstItem="h7x-Lc-WT0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mxd-i2-mxm"/>
+                            <constraint firstItem="Tt8-27-qKa" firstAttribute="top" secondItem="Wf0-OH-Ezn" secondAttribute="bottom" constant="22" id="pZW-9C-B9l"/>
+                            <constraint firstItem="Cfe-Tb-uF3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q6w-Jq-LsN"/>
+                            <constraint firstItem="Nam-7i-aZH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qsy-ct-dvu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wf0-OH-Ezn" secondAttribute="trailing" constant="21" id="v1b-R8-OlL"/>
+                            <constraint firstItem="zya-Br-oQI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vGh-Q1-5DF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="FoodLabel" destination="Wf0-OH-Ezn" id="Xgr-ad-VNH"/>
+                        <outlet property="FullnessLabel" destination="zya-Br-oQI" id="ZBB-78-uQI"/>
+                        <outlet property="HappinessLabel" destination="Cfe-Tb-uF3" id="m21-74-VTU"/>
+                        <outlet property="MoneyLabel" destination="h7x-Lc-WT0" id="eEk-zP-mhx"/>
+                        <outlet property="ToyLabel" destination="Tt8-27-qKa" id="GZ1-5X-czb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="123.91304347826087"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="1242" height="2208"/>
+        <image name="dog.png" width="200" height="200"/>
+    </resources>
+</document>
