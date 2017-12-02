@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NestEgg.xcodeproj">
+      location = "group:../FacebookSDK/FBSDKCoreKit.framework">
+   </FileRef>
+   <FileRef
+      location = "group:../FacebookSDK/FBSDKLoginKit.framework">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

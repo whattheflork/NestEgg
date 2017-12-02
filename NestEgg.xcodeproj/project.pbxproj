@@ -15,6 +15,9 @@
 		73EC658C1FCB298000991F46 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EC658B1FCB298000991F46 /* Pet.swift */; };
 		73EC658F1FCB2BCA00991F46 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 73EC658D1FCB2BCA00991F46 /* dog.png */; };
 		73EC65901FCB2BCA00991F46 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 73EC658E1FCB2BCA00991F46 /* background.png */; };
+		A07A4AD01FD234BC00669DDE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07A4ACE1FD234BB00669DDE /* FBSDKLoginKit.framework */; };
+		A07A4AD11FD234BC00669DDE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07A4ACF1FD234BC00669DDE /* FBSDKCoreKit.framework */; };
+		A07A4AD31FD238F200669DDE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A4AD21FD238F200669DDE /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		73EC658B1FCB298000991F46 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		73EC658D1FCB2BCA00991F46 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
 		73EC658E1FCB2BCA00991F46 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		A07A4ACE1FD234BB00669DDE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A07A4ACF1FD234BC00669DDE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A07A4AD21FD238F200669DDE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07A4AD01FD234BC00669DDE /* FBSDKLoginKit.framework in Frameworks */,
+				A07A4AD11FD234BC00669DDE /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +54,7 @@
 			children = (
 				73EC65741FCB292D00991F46 /* NestEgg */,
 				73EC65731FCB292D00991F46 /* Products */,
+				A07A4ACD1FD234BB00669DDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +101,7 @@
 			children = (
 				73EC65751FCB292D00991F46 /* AppDelegate.swift */,
 				73EC65771FCB292D00991F46 /* ViewController.swift */,
+				A07A4AD21FD238F200669DDE /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +113,15 @@
 				73EC658D1FCB2BCA00991F46 /* dog.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		A07A4ACD1FD234BB00669DDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A07A4ACF1FD234BC00669DDE /* FBSDKCoreKit.framework */,
+				A07A4ACE1FD234BB00669DDE /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73EC65781FCB292D00991F46 /* ViewController.swift in Sources */,
+				A07A4AD31FD238F200669DDE /* LoginController.swift in Sources */,
 				73EC658C1FCB298000991F46 /* Pet.swift in Sources */,
 				73EC65761FCB292D00991F46 /* AppDelegate.swift in Sources */,
 			);
@@ -320,6 +340,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3Y92H5QW4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)",
+					/Users/mflorkie/Documents/workspace/NestEgg/FacebookSDK,
+				);
 				INFOPLIST_FILE = NestEgg/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewchau.NestEgg;
@@ -335,6 +361,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3Y92H5QW4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)",
+					/Users/mflorkie/Documents/workspace/NestEgg/FacebookSDK,
+				);
 				INFOPLIST_FILE = NestEgg/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewchau.NestEgg;
