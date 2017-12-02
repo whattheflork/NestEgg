@@ -19,6 +19,8 @@
 		A07A4AD01FD234BC00669DDE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07A4ACE1FD234BB00669DDE /* FBSDKLoginKit.framework */; };
 		A07A4AD11FD234BC00669DDE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07A4ACF1FD234BC00669DDE /* FBSDKCoreKit.framework */; };
 		A07A4AD31FD238F200669DDE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A4AD21FD238F200669DDE /* LoginController.swift */; };
+		A07A4AD51FD3157200669DDE /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A4AD41FD3157100669DDE /* RegisterUserViewController.swift */; };
+		A07A4AD81FD3158F00669DDE /* Calvin's main .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07A4AD61FD3158F00669DDE /* Calvin's main .storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		A07A4ACE1FD234BB00669DDE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A07A4ACF1FD234BC00669DDE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A07A4AD21FD238F200669DDE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		A07A4AD41FD3157100669DDE /* RegisterUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		A07A4AD71FD3158F00669DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Calvin's main .storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		73EC65881FCB294000991F46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A07A4AD61FD3158F00669DDE /* Calvin's main .storyboard */,
 				73EC65791FCB292D00991F46 /* Main.storyboard */,
 				73EC657C1FCB292D00991F46 /* Assets.xcassets */,
 			);
@@ -105,6 +110,7 @@
 		73EC65891FCB294700991F46 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A07A4AD41FD3157100669DDE /* RegisterUserViewController.swift */,
 				73EC65751FCB292D00991F46 /* AppDelegate.swift */,
 				73EC65771FCB292D00991F46 /* ViewController.swift */,
 				A07A4AD21FD238F200669DDE /* LoginController.swift */,
@@ -204,6 +210,7 @@
 			files = (
 				73EC658F1FCB2BCA00991F46 /* dog.png in Resources */,
 				73EC65901FCB2BCA00991F46 /* background.png in Resources */,
+				A07A4AD81FD3158F00669DDE /* Calvin's main .storyboard in Resources */,
 				73EC65801FCB292D00991F46 /* LaunchScreen.storyboard in Resources */,
 				73EC657D1FCB292D00991F46 /* Assets.xcassets in Resources */,
 				73EC657B1FCB292D00991F46 /* Main.storyboard in Resources */,
@@ -278,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07A4AD51FD3157200669DDE /* RegisterUserViewController.swift in Sources */,
 				73EC65781FCB292D00991F46 /* ViewController.swift in Sources */,
 				A07A4AD31FD238F200669DDE /* LoginController.swift in Sources */,
 				73EC658C1FCB298000991F46 /* Pet.swift in Sources */,
@@ -302,6 +310,14 @@
 				73EC657F1FCB292D00991F46 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A07A4AD61FD3158F00669DDE /* Calvin's main .storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A07A4AD71FD3158F00669DDE /* Base */,
+			);
+			name = "Calvin's main .storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
