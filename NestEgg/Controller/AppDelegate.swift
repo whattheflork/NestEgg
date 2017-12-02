@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         //GGLContext.sharedInstance().configureWithError(&configureError)
         //assert(configureError == nil, "Error configuring Google services: \(configureError)")
         
+        GIDSignIn.sharedInstance().clientID = "779951679818-3h90hf9vdhmnhuqbnduh57kagdsjt8pf.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         
         return true
@@ -40,12 +41,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        
+        if (error == nil) {
+            loggedIn = false
+        }
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        
+        if (error == nil) {
+            loggedIn = true
+        }
     }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -2,7 +2,7 @@ import UIKit
 import FBSDKLoginKit
 import GoogleSignIn
 
-var isLoggedIn: Bool = false
+var loggedIn: Bool = false
 
 class LoginController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
     
@@ -46,9 +46,10 @@ class LoginController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDe
     }
     
     func isLoggedIn() -> Bool{
-        if FBSDKAccessToken.current() != nil {
+        if FBSDKAccessToken.current() != nil || loggedIn {
             return true
         }
+        
         return false
     }
     
