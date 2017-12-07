@@ -187,13 +187,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JO-Vn-FoY" customClass="LoginButton">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JO-Vn-FoY">
                                 <rect key="frame" x="184" y="359" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="LoginButton:" destination="o1n-a5-utc" eventType="touchUpInside" id="uZM-EG-yBC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly3-bu-SZV">
                                 <rect key="frame" x="178" y="397" width="59" height="30"/>
@@ -211,6 +214,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="uuK-8K-HuI"/>
                     <connections>
+                        <outlet property="loginButton" destination="6JO-Vn-FoY" id="NxQ-1I-mZV"/>
+                        <outlet property="passwordField" destination="Es4-eT-DLw" id="VkD-cL-4xW"/>
+                        <outlet property="usernameField" destination="heV-xz-b0U" id="V1t-6K-6bp"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="facebookLoginSwitch" id="E67-kw-SWz"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="googleLoginSwitch" id="8JQ-e5-gkK"/>
                     </connections>
@@ -341,6 +347,7 @@
         <image name="dog.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="cVM-xH-IXe"/>
         <segue reference="hYj-TW-gib"/>
         <segue reference="E67-kw-SWz"/>
     </inferredMetricsTieBreakers>

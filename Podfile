@@ -8,5 +8,6 @@ target 'NestEgg' do
   # Pods for NestEgg
 
   pod ‘GoogleSignIn’
+  pod 'AlamofireSwiftyJSON'
 
 end
