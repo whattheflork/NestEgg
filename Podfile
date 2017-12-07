@@ -10,6 +10,9 @@ target 'NestEgg' do
   pod ‘GoogleSignIn’
   pod 'AlamofireSwiftyJSON'
   pod 'BraintreeDropIn'
-  
+  pod 'Braintree/PayPal'
+  pod 'Braintree/Venmo'
+  pod 'Braintree/Apple-Pay'
+  pod 'Braintree/3D-Secure'
 
 end

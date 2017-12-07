@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import GoogleSignIn
+import Braintree
 
 
 @UIApplicationMain
@@ -29,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = "779951679818-3h90hf9vdhmnhuqbnduh57kagdsjt8pf.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         
+        BTAppSwitch.setReturnURLScheme("com.andrewchau.NestEgg.payments")
         
         return true
     }
@@ -37,6 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let facebookHandled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String!, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
         
         let googleHandled = GIDSignIn.sharedInstance().handle(url,sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        
+        if url.scheme?.localizedCaseInsensitiveCompare("com.andrewchau.NestEgg.payments") == .orderedSame {
+            return BTAppSwitch.handleOpen(url, options: options)
+        }
         
         return facebookHandled || googleHandled
     }
