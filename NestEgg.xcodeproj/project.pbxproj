@@ -21,6 +21,7 @@
 		A07A4AD31FD238F200669DDE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A4AD21FD238F200669DDE /* LoginController.swift */; };
 		A07A4AD51FD3157200669DDE /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A4AD41FD3157100669DDE /* RegisterUserViewController.swift */; };
 		A07A4AD81FD3158F00669DDE /* Calvin's main .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07A4AD61FD3158F00669DDE /* Calvin's main .storyboard */; };
+		A07A4ADE1FD9D92B00669DDE /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A4ADD1FD9D92B00669DDE /* PaymentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A07A4AD21FD238F200669DDE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		A07A4AD41FD3157100669DDE /* RegisterUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
 		A07A4AD71FD3158F00669DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Calvin's main .storyboard"; sourceTree = "<group>"; };
+		A07A4ADD1FD9D92B00669DDE /* PaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				73EC65751FCB292D00991F46 /* AppDelegate.swift */,
 				73EC65771FCB292D00991F46 /* ViewController.swift */,
 				A07A4AD21FD238F200669DDE /* LoginController.swift */,
+				A07A4ADD1FD9D92B00669DDE /* PaymentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,6 +250,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-NestEgg/Pods-NestEgg-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireSwiftyJSON/AlamofireSwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
+				"${BUILT_PRODUCTS_DIR}/BraintreeDropIn/BraintreeDropIn.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -256,6 +261,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireSwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Braintree.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BraintreeDropIn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -293,6 +300,7 @@
 			files = (
 				A07A4AD51FD3157200669DDE /* RegisterUserViewController.swift in Sources */,
 				73EC65781FCB292D00991F46 /* ViewController.swift in Sources */,
+				A07A4ADE1FD9D92B00669DDE /* PaymentController.swift in Sources */,
 				A07A4AD31FD238F200669DDE /* LoginController.swift in Sources */,
 				73EC658C1FCB298000991F46 /* Pet.swift in Sources */,
 				73EC65761FCB292D00991F46 /* AppDelegate.swift in Sources */,

@@ -2,21 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-        <key>NSExceptionDomains</key>
-        <dict>
-            <key>nyu-ios-restapi.us-east-2.elasticbeanstalk.com.com</key>
-            <dict>
-                <key>NSExceptionAllowsInsecureHTTPLoads</key>
-                <true/>
-                <key>NSIncludesSubdomains</key>
-                <true/>
-            </dict>
-        </dict>
-    </dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -47,6 +32,15 @@
 				<string>com.googleusercontent.apps.779951679818-3h90hf9vdhmnhuqbnduh57kagdsjt8pf</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.andrewchau.NestEgg.payments</string>
+			</array>
+		</dict>
+		<dict/>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
@@ -63,6 +57,21 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>nyu-ios-restapi.us-east-2.elasticbeanstalk.com.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

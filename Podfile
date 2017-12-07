@@ -9,5 +9,7 @@ target 'NestEgg' do
 
   pod ‘GoogleSignIn’
   pod 'AlamofireSwiftyJSON'
+  pod 'BraintreeDropIn'
+  
 
 end

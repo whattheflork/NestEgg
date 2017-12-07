@@ -136,6 +136,27 @@
             </objects>
             <point key="canvasLocation" x="319" y="-417"/>
         </scene>
+        <!--Payment Controller-->
+        <scene sceneID="6yq-pI-3HX">
+            <objects>
+                <viewController id="ZJZ-Dn-GgT" customClass="PaymentController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="04q-ht-cob">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pzI-3q-rXO">
+                                <rect key="frame" x="-103" y="-10" width="621" height="1104"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="sFD-74-WIo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zx7-cM-4rG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="-413"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="oq1-zm-dMP">
             <objects>
@@ -162,10 +183,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="x8w-ZR-7Ds">
-                                <rect key="frame" x="-99" y="-254" width="621" height="1104"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NestEgg" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VUA-Tg-qEG">
                                 <rect key="frame" x="159" y="193" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -208,6 +225,10 @@
                                     <segue destination="YIw-oR-86s" kind="presentation" id="cVM-xH-IXe"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="x8w-ZR-7Ds">
+                                <rect key="frame" x="-103" y="-254" width="621" height="1104"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="XX2-ko-xly"/>
@@ -342,7 +363,7 @@
         <image name="dog.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hYj-TW-gib"/>
+        <segue reference="0QK-dE-Lqm"/>
         <segue reference="E67-kw-SWz"/>
     </inferredMetricsTieBreakers>
 </document>

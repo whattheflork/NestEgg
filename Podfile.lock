@@ -3,6 +3,20 @@ PODS:
   - AlamofireSwiftyJSON (1.0.0):
     - Alamofire (~> 4.0)
     - SwiftyJSON (~> 3.0)
+  - Braintree/Card (4.9.6):
+    - Braintree/Core
+  - Braintree/Core (4.9.6)
+  - Braintree/UnionPay (4.9.6):
+    - Braintree/Card
+    - Braintree/Core
+  - BraintreeDropIn (5.2.3):
+    - BraintreeDropIn/DropIn (= 5.2.3)
+  - BraintreeDropIn/DropIn (5.2.3):
+    - Braintree/Card (~> 4.0)
+    - Braintree/Core (~> 4.0)
+    - Braintree/UnionPay (~> 4.0)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (5.2.3)
   - GoogleSignIn (4.1.1):
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
@@ -27,17 +41,20 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireSwiftyJSON
+  - BraintreeDropIn
   - GoogleSignIn
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireSwiftyJSON: 78908b766483a28aa5cc90fd191a687467042973
+  Braintree: 56ad3fa47b2f4b047cb50d989d15208690a6cbae
+  BraintreeDropIn: 20109bea730b9bd31d71792ca84545265b7d27e4
   GoogleSignIn: 3fdaa34a2ba04dbd7a25d7db39aecb0da98d5bdc
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMOAuth2: be83fd28d63ae3087e7d351b1f39c1a7e24ab6e7
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 30609e3e8d21075249199cf855de6c724363acc4
+PODFILE CHECKSUM: 38bd44abd54346e368082e2e05ef17a0415d2534
 
 COCOAPODS: 1.3.1
