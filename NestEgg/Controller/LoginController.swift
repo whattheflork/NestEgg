@@ -119,22 +119,6 @@ class LoginController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDe
     }
     
     
-    
-//    @IBAction func DoLogin(_ sender: AnyObject) {
-//
-//        if(login_button.titleLabel?.text == "Logout")
-//        {
-//            let preferences = UserDefaults.standard
-//            preferences.removeObject(forKey: "session")
-//
-//            LoginToDo()
-//        }
-//        else{
-//            login_now(username:username_input.text!, password: password_input.text!)
-//        }
-//
-//    }
-    
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("Did log out of facebook")
         redirectIfLoggedIn()

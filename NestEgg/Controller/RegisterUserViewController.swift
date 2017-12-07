@@ -63,8 +63,9 @@ class RegisterUserViewController: UIViewController {
         
         view.addSubview(myActivityIndicator)
         
-        let myUrl = URL(string: "http://nyu-ios-restapi.us-east-2.elasticbeanstalk.com/create-user/")
-        var request = URLRequest(url: myUrl!)
+        let myUrl = URL(string: "http://nyu-ios-restapi.us-east-2.elasticbeanstalk.com/create-user/username=\(usernameTextField.text!)&password=\(passwordTextField.text!)&email=\(emailTextField.text!)")!
+        var request = URLRequest(url: myUrl)
+        print(myUrl)
         request.httpMethod = "POST"
         //request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         //request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -98,15 +99,16 @@ class RegisterUserViewController: UIViewController {
             
             do {
                 print("before JSONSErialization???")
+                
                 let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary
                 
                 print("after JSONSErialization???")
-                print("Success? \(json?["success"])!")
+                print("Success? \(String(describing: json?["success"]))!")
                 if let parseJSON = json {
                     let userId = parseJSON["success"] as? String
-                    print("User id: \(String(describing: userId!))")
+                    print("User id: \(String(describing: userId))")
                     
-                    if(userId?.isEmpty)! {
+                    if(String(describing: json?["success"]) != "Optional(1)") {
                         self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later.")
                         return
                     } else {
