@@ -22,6 +22,7 @@
 		A07A4AD51FD3157200669DDE /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A4AD41FD3157100669DDE /* RegisterUserViewController.swift */; };
 		A07A4AD81FD3158F00669DDE /* Calvin's main .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07A4AD61FD3158F00669DDE /* Calvin's main .storyboard */; };
 		A07A4ADE1FD9D92B00669DDE /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A4ADD1FD9D92B00669DDE /* PaymentController.swift */; };
+		A07A4AE01FDB13F700669DDE /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = A07A4ADF1FDB13E300669DDE /* back_button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A07A4AD41FD3157100669DDE /* RegisterUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
 		A07A4AD71FD3158F00669DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Calvin's main .storyboard"; sourceTree = "<group>"; };
 		A07A4ADD1FD9D92B00669DDE /* PaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		A07A4ADF1FDB13E300669DDE /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back_button.png; path = ../../../../../Desktop/back_button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		73EC658A1FCB296100991F46 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A07A4ADF1FDB13E300669DDE /* back_button.png */,
 				73EC658E1FCB2BCA00991F46 /* background.png */,
 				73EC658D1FCB2BCA00991F46 /* dog.png */,
 			);
@@ -213,6 +216,7 @@
 			files = (
 				73EC658F1FCB2BCA00991F46 /* dog.png in Resources */,
 				73EC65901FCB2BCA00991F46 /* background.png in Resources */,
+				A07A4AE01FDB13F700669DDE /* back_button.png in Resources */,
 				A07A4AD81FD3158F00669DDE /* Calvin's main .storyboard in Resources */,
 				73EC65801FCB292D00991F46 /* LaunchScreen.storyboard in Resources */,
 				73EC657D1FCB292D00991F46 /* Assets.xcassets in Resources */,

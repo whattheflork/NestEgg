@@ -103,6 +103,24 @@
                                 <rect key="frame" x="67" y="303" width="280" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance: $XXX.XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-He-8Ly">
+                                <rect key="frame" x="20" y="192" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4al-D7-rJf">
+                                <rect key="frame" x="246" y="183" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Add Balance">
+                                    <color key="titleColor" red="0.04015544041" green="0.04015544041" blue="0.04015544041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hv1-P2-mXm" kind="show" id="RNo-cX-nHP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -125,6 +143,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="eap-JI-tce"/>
                     <connections>
+                        <outlet property="AddBalanceButton" destination="4al-D7-rJf" id="T2w-jk-srR"/>
+                        <outlet property="BalanceLabel" destination="fTF-He-8Ly" id="u7S-Hg-MIp"/>
                         <outlet property="FoodLabel" destination="Wf0-OH-Ezn" id="Xgr-ad-VNH"/>
                         <outlet property="FullnessLabel" destination="zya-Br-oQI" id="ZBB-78-uQI"/>
                         <outlet property="HappinessLabel" destination="Cfe-Tb-uF3" id="m21-74-VTU"/>
@@ -134,28 +154,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319" y="-417"/>
+            <point key="canvasLocation" x="318.84057971014494" y="-417.39130434782612"/>
         </scene>
         <!--Payment Controller-->
-        <scene sceneID="6yq-pI-3HX">
+        <scene sceneID="cvc-MO-w1b">
             <objects>
-                <viewController id="ZJZ-Dn-GgT" customClass="PaymentController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="04q-ht-cob">
+                <viewController id="hv1-P2-mXm" customClass="PaymentController" customModule="NestEgg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CZm-NY-Sod">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pzI-3q-rXO">
-                                <rect key="frame" x="-103" y="-10" width="621" height="1104"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ESe-eE-v84">
+                                <rect key="frame" x="-89" y="-268" width="621" height="1104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much would you like to add?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwn-nD-BKN">
+                                <rect key="frame" x="82" y="93" width="300" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nne-B6-BGI">
+                                <rect key="frame" x="184" y="140" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$10">
+                                    <color key="titleColor" red="0.04015544041" green="0.04015544041" blue="0.04015544041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="TenButton:" destination="hv1-P2-mXm" eventType="touchUpInside" id="0ih-Ii-97k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkv-9N-X8e">
+                                <rect key="frame" x="184" y="194" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$20">
+                                    <color key="titleColor" red="0.04015544041" green="0.04015544041" blue="0.04015544041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="TwentyButton:" destination="hv1-P2-mXm" eventType="touchUpInside" id="GS2-Ci-4tZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sZ-NE-QUV">
+                                <rect key="frame" x="184" y="251" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$30">
+                                    <color key="titleColor" red="0.04015544041" green="0.04015544041" blue="0.04015544041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="ThirtyButton:" destination="hv1-P2-mXm" eventType="touchUpInside" id="ADn-UI-zwB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgB-pg-rGS">
+                                <rect key="frame" x="0.0" y="0.0" width="65" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back_button.png">
+                                    <color key="titleColor" red="0.04015544041" green="0.04015544041" blue="0.04015544041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wSy-49-gQQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="sFD-74-WIo"/>
+                        <viewLayoutGuide key="safeArea" id="vXn-zO-Z5X"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gTS-qq-jiM"/>
+                    <connections>
+                        <outlet property="BackButton" destination="dgB-pg-rGS" id="yt5-UX-90a"/>
+                        <outlet property="QuestionLabel" destination="Gwn-nD-BKN" id="eI7-BL-2zc"/>
+                        <outlet property="TenButton" destination="nne-B6-BGI" id="bY0-i6-Jnz"/>
+                        <outlet property="ThirtyButton" destination="6sZ-NE-QUV" id="ARR-Hc-pYs"/>
+                        <outlet property="TwentyButton" destination="kkv-9N-X8e" id="2AZ-2W-9WN"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zx7-cM-4rG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSL-ia-9qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="-413"/>
+            <point key="canvasLocation" x="1318.840579710145" y="-410.054347826087"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oq1-zm-dMP">
@@ -183,6 +258,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="x8w-ZR-7Ds">
+                                <rect key="frame" x="-103" y="-254" width="621" height="1104"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NestEgg" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VUA-Tg-qEG">
                                 <rect key="frame" x="159" y="193" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,10 +304,6 @@
                                     <segue destination="YIw-oR-86s" kind="presentation" id="cVM-xH-IXe"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="x8w-ZR-7Ds">
-                                <rect key="frame" x="-103" y="-254" width="621" height="1104"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="XX2-ko-xly"/>
@@ -358,12 +433,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_button.png" width="512" height="512"/>
         <image name="background" width="621" height="1104"/>
         <image name="background.png" width="1242" height="2208"/>
         <image name="dog.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0QK-dE-Lqm"/>
-        <segue reference="E67-kw-SWz"/>
+        <segue reference="hYj-TW-gib"/>
+        <segue reference="wSy-49-gQQ"/>
     </inferredMetricsTieBreakers>
 </document>
