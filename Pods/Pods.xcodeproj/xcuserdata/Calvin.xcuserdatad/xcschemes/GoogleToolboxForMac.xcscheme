@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73EC65711FCB292D00991F46"
-               BuildableName = "NestEgg.app"
-               BlueprintName = "NestEgg"
-               ReferencedContainer = "container:NestEgg.xcodeproj">
+               BlueprintIdentifier = "F05BBF0ABCBAB1D55C2FE0C052A8CF62"
+               BuildableName = "GoogleToolboxForMac.framework"
+               BlueprintName = "GoogleToolboxForMac"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "73EC65711FCB292D00991F46"
-            BuildableName = "NestEgg.app"
-            BlueprintName = "NestEgg"
-            ReferencedContainer = "container:NestEgg.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -53,16 +44,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "73EC65711FCB292D00991F46"
-            BuildableName = "NestEgg.app"
-            BlueprintName = "NestEgg"
-            ReferencedContainer = "container:NestEgg.xcodeproj">
+            BlueprintIdentifier = "F05BBF0ABCBAB1D55C2FE0C052A8CF62"
+            BuildableName = "GoogleToolboxForMac.framework"
+            BlueprintName = "GoogleToolboxForMac"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -72,16 +62,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "73EC65711FCB292D00991F46"
-            BuildableName = "NestEgg.app"
-            BlueprintName = "NestEgg"
-            ReferencedContainer = "container:NestEgg.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
