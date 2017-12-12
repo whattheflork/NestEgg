@@ -10,6 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import Braintree
 import BraintreeDropIn
+import Foundation
 
 
 
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var AddBalanceButton: UIButton!
     @IBOutlet weak var BalanceLabel: UILabel!
     
+    var starveTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, #selector(ViewController.starve), userInfo: nil, repeats: true)
     
     @IBAction func BuyToy(_ sender: UIButton) {
         numToys += 1
@@ -66,7 +68,10 @@ class ViewController: UIViewController {
 //        performSegue(withIdentifier: "balanceSwitch", sender: self)
 //    }
     
-    
+    func starve() {
+        myPet.fullness -= 1
+        myPet.happiness -= 1
+    }
     
     func updateDisplay() {
         HappinessLabel.text = "Happiness: \(myPet.happiness)"
