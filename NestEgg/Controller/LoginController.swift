@@ -134,6 +134,7 @@ class LoginController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDe
         print("Successfully logged in with Facebook...")
     }
     
+    
     func isLoggedIn() -> Bool{
         if FBSDKAccessToken.current() != nil || loggedIn {
             return true
